@@ -30,36 +30,39 @@
         <div class="container">
 			<h3><a href="#">سوالات متداول لینوکسی</a></h3>
 			<ul class="nav">
-				<li class='dropdown'><a class='dropdown-toggle' href='#'>کاربران</a><ul class='dropdown-menu'><li><a href='/users/list/1'>لیست کاربران</a></li><li><a href='/users/create'>ایجاد کاربر</a></li></ul></li><li class='dropdown'><a class='dropdown-toggle' href='#'>پروژه‌ها</a><ul class='dropdown-menu'><li><a href='/projects/list/1'>لیست پروژه‌ها</a></li><li><a href='/projects/create'>ایجاد پروژه</a></li></ul></li>				
-			</ul>
-
-			<ul class="nav secondary-nav">
-				<li class="dropdown">
-					<a class="dropdown-toggle" href="#">کاربر</a>
-					<ul class="dropdown-menu">
-						<li><a href="/users/settings">تنظیمات</a></li>
-						<li><a href="/users/listids">OpenIDs</a></li>
-						<li class="divider"></li>
-						<li><a href="/users/logout">خروج</a></li>
-					</ul>
-				</li>
+				<li class='dropdown'><a href='#linux-terminal'>ترمینال</a></li>				
 			</ul>
         </div>
 	</div><!-- /topbar-inner -->
 </div>	
 <div class="container">
 	<!-- <h1>سوالات متداول لینوکس</h1> -->
-	<h2>مقدمه</h2>
+	<h2 id="top">مقدمه</h2>
 	<h3>این چیست؟</h3>
 	<p>این سند قرار است که سوالات ساده ای که در ابتدای استفاده از لینوکس به آنها برمیخورید را جواب بدهد. سوالاتی که هر تازه کاری به آن برمیخورد، و ممکن است زمان زیادی را از او تلف کند. </p>
 	<h3>این سند چه چیزی نیست؟</h3>
 	<p>این یک فروم نیست. سوالات شما اگر اینجا نیستند، نمیتوانید اینجا بپرسیدشان. برای اینکار از فرومها،‌چنل‌های IRC استفاده کنید. </p>
 	<h3>چطور میتوانم کمک کنم؟</h3>
 	<p>احساس میکنید جواب سوالی را میدانید که لازم است اینجا باشد؟ اینجا اشتباهی در پاسخ به یک سوال وجود دارد؟ غلط املایی :) پیدا کرده‌اید؟ یا ...
-		<br />از این سند در گیت‌هاب یک کپی برای خودتان ایجاد کنید، آنرا ویرایش کنید، و در نهایت درخواست ادغام آنرا بدهید
+		<br />از این <a href="https://github.com/fzerorubigd/plf">سند در گیت‌هاب</a> یک کپی برای خودتان ایجاد کنید، آنرا ویرایش کنید، و در نهایت درخواست ادغام آنرا بدهید
 	</p>
-
+	<div class="alert-message warning">این فقط یه شروع برای این پروژه است و هدف من این بوده که فقط یک راه ساده و قابل گسترش برای اینکار ارایه کنم، و گیت به نظرم بهترین بستر بود. هنوز دسته بندی ها درست نیست، سوالات و مقدمه هنوز شباهتی به راهنما :) ندارند، لطفا در صورتی که پیشنهادی دارید، <a href="https://github.com/fzerorubigd/plf"> این پروژه </a> را فورک کنید، ویرایش کنید و درخواست pull بدهید. اگر سوالی بود یا پیشنهادی که در این قالب جای نمیگرفت،‌با fzerorubigd روی جیمیل تماس بگیرید. ممنون.</div>
 	<h2>سوالات</h2>
+	<h3 id="terminal-linux-questions">ترمینال لینوکس</h3>
+	<ol class="question-list">
+		<li id="q1"><a href="#a1">در ترمینال زمانی که رمز باید وارد کنم، ظاهرا همه دکمه های صفحه کلید غیر‌فعال میشوند چون چیزی در ترمینال ثبت نمیشود</a></li>
+	</ol>
+
+	
+	<h3 id="linux-terminal">ترمینال لینوکس</h3>
+	<div class="answers">
+		<div class="question" id="a1">در ترمینال زمانی که رمز باید وارد کنم، ظاهرا همه دکمه های صفحه کلید غیر‌فعال میشوند چون چیزی در ترمینال ثبت نمیشود</div>
+		<div class="answer">
+		کلید‌ها غیرفعال نمیشوند. بنا به دلایل امنیتی کاملا واضح، شما ورودی خودتان را نمیبینید. رمز مورد نظر را وارد کنید و سپس دکمه Enter را بزنید. 
+		</div>
+	</div>
+
+	<div id="footer"><a href="#top">بازگشت به بالا</a></div>
 </div>
 </body>
 </html>
