@@ -1,0 +1,28 @@
+*{font-family: "Iranian sans", Tahoma, Arial;}
+body
+{
+    font-family: "Iranian sans", Tahoma, Arial;
+}
+
+.topbar {
+	position : static;
+	margin-bottom : 15px;
+}
+
+div.question {
+	padding : 10px 0px;
+	border-top : 1px solid ;
+	font-weight : bold;
+}
+
+ol.question-list {
+	font-weight : bold;
+	font-size : 14pt;	
+}
+
+#footer {
+	padding-top : 3px;
+	margin-top : 10px;
+	border-top : 1px solid gray;
+}
+

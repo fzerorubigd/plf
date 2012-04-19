@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="pml" basedir="." default="prepare">
+	
+	<property userProperty="true" name="property-specifier" value="$" override="true" />
+	<property file="build.properties" />
+	
+	<target name="prepare" description="Prepare folders and permisions">
+		<mkdir dir="output" mode="755"/>
+		
+		<xslt todir="output" style="transform.xsl" overwrite="true">
+			<mapper type="glob" from="*.xml" to="*.html" />
+			<fileset dir="questions">
+				<include name="**/*.xml" />
+			</fileset>
+			<filterchain>
+				<replacetokens begintoken="%%" endtoken="%%">
+					<token key="faq.title" value="${faq.title}" />
+					<token key="back.to.top" value="${back.to.top}" />
+				</replacetokens>
+			</filterchain>
+		</xslt>
+		
+		<copy todir="output" overwrite="true">
+			<fileset dir="templates">
+				<include name="**/*" />
+			</fileset>
+		</copy>		
+	</target>
+	
+</project>
