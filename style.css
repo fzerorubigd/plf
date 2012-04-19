@@ -2,7 +2,11 @@
 body
 {
     font-family: "Iranian sans", Tahoma, Arial;
-	padding-top : 60px;
+}
+
+.topbar {
+	position : static;
+	margin-bottom : 15px;
 }
 
 div.question {
