@@ -27,4 +27,18 @@
 		</copy>		
 	</target>
 	
+	
+	<target name="gh-pages" description="Pubis the result on github branch">
+		<delete dir="gh-pages" includeemptydirs="true" verbose="true" failonerror="true" />
+		<exec command="git clone . /tmp/gh-pages" passthru="true"/>
+		<exec command="git stash" passthru="true" dir="/tmp/gh-pages"/>
+		<exec command="git checkout gh-pages" passthru="true" dir="/tmp/gh-pages"/>
+		
+		<copy todir="/tmp/gh-pages" overwrite="true">
+			<fileset dir="output">
+				<include name="**/*" />
+			</fileset>
+		</copy>	
+		<exec command="git add ." passthru="true" dir="/tmp/gh-pages"/>			
+	</target>
 </project>
