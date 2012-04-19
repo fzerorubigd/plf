@@ -5,18 +5,19 @@
 ]]></body>
 	</hero>
 	<category>
-		<name>linux-terminal</name>
-		<title>ترمینال لینوکس</title>
-		<description>سوالات رایج درباره ترمینال لینوکس</description>
+		<name>unity</name>
+		<title> سوالات عمومی درباره میزکار Unity</title>
+		<description>سوالات رایج در مورد لینوکس</description>
 	</category>
 	<questions>
 		<question>
-			<q><![CDATA[1در ترمینال زمانی که رمز باید وارد کنم، ظاهرا همه دکمه های صفحه کلید غیر‌فعال میشوند چون چیزی در ترمینال ثبت نمیشود. چرا؟]]></q>
-			<a><![CDATA[کلید‌ها غیرفعال نمیشوند. بنا به دلایل امنیتی کاملا واضح، شما ورودی خودتان را نمیبینید. رمز مورد نظر را وارد کنید و سپس دکمه Enter را بزنید. ]]></a>
-		</question>
+			<q><![CDATA[Unity چیست؟]]></q>
+			<a><![CDATA[لطفا این سوال را تکمیل کنید]]></a>
+		</question>		
 		<question>
 			<q><![CDATA[چطور میتوانم ....؟]]></q>
 			<a><![CDATA[لطفا این سوال را تکمیل کنید]]></a>
-		</question>										
+		</question>		
+					
 	</questions>
 </page>

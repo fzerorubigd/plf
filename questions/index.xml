@@ -24,5 +24,8 @@
 	<files>
 		<file name="questions/general.xml" />
 		<file name="questions/linux-terminal.xml" />
+		<file name="questions/gnome.xml" />
+		<file name="questions/kde.xml" />
+		<file name="questions/unity.xml" />
 	</files>
 </page>
