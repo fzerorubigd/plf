@@ -39,6 +39,8 @@
 				<include name="**/*" />
 			</fileset>
 		</copy>	
-		<exec command="git add ." passthru="true" dir="/tmp/gh-pages"/>			
+		<exec command="git add . " passthru="true" dir="/tmp/gh-pages"/>			
+		<exec command="git commit -a -m 'Auto commit for docs' " passthru="true" dir="/tmp/gh-pages"/>	
+		<exec command="git push origin gh-pages" passthru="true" dir="/tmp/gh-pages"/>	
 	</target>
 </project>
