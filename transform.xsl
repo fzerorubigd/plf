@@ -41,7 +41,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 					<xsl:attribute name="class">nav secondary-nav</xsl:attribute>
 						<xsl:element name="li" namespace="http://www.w3.org/1999/xhtml">
 							<xsl:element name="a" namespace="http://www.w3.org/1999/xhtml">
-								<xsl:attribute name="href">/</xsl:attribute>
+								<xsl:attribute name="href">/plf</xsl:attribute>
 								%%faq.title%%
 							</xsl:element>
 						</xsl:element>
@@ -131,6 +131,17 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 					<xsl:element name="div" namespace="http://www.w3.org/1999/xhtml">
 						<xsl:attribute name="class">answer</xsl:attribute>
 						<xsl:value-of select="a" disable-output-escaping="yes"/>
+					</xsl:element>
+					<xsl:element name="ul" namespace="http://www.w3.org/1999/xhtml">
+						<xsl:attribute name="class">refrences</xsl:attribute>
+						<xsl:for-each select="refrences/refrence">
+							<xsl:element name="li" namespace="http://www.w3.org/1999/xhtml">
+								<xsl:element name="a" namespace="http://www.w3.org/1999/xhtml">
+									<xsl:attribute name="href"><xsl:value-of select="@href"/></xsl:attribute>
+									<xsl:value-of select="@title"/>
+								</xsl:element>
+							</xsl:element>
+						</xsl:for-each>
 					</xsl:element>
 					<xsl:element name="a" namespace="http://www.w3.org/1999/xhtml">
 						<xsl:attribute name="href">#<xsl:value-of select="/page/category/name"/>-question<xsl:value-of select="position()"/></xsl:attribute>
