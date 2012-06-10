@@ -5,7 +5,16 @@
 	font-weight: normal;
 	font-style: normal;
 }
-*{font-family: "Yas", Tahoma, Arial;}
+
+@font-face {
+	font-family: 'Iranian Sans';
+	src: url('fonts/irsans.otf');
+	src: local('☺'), url('fonts/irsans.woff') format('woff'), url('fonts/irsans.ttf') format('truetype'), url('fonts/irsans.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+*{font-family: 'Iranian Sans',"Yas", Tahoma, Arial;}
 body
 {
     font-family: "Yas", Tahoma, Arial;
