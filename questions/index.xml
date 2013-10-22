@@ -27,5 +27,6 @@
 		<file name="questions/gnome.xml" />
 		<file name="questions/kde.xml" />
 		<file name="questions/unity.xml" />
+		<file name="questions/distros.xml" />
 	</files>
 </page>
